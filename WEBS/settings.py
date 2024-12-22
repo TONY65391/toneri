@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*j=jp_ph1!t7dbn6n6*z)s^lb(9%iqs4j3@)_1h$cp(2ojd0at'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoise.Middleware'
 ]
 
 ROOT_URLCONF = 'WEBS.urls'
@@ -76,8 +77,13 @@ WSGI_APPLICATION = 'WEBS.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'tony_database',
+        'USER': 'tony_database_user',
+        'PASSWORD': 'DsqRexfloH8gXui9jhuPxQy7DfGrnOkw',
+        'HOST': 'dpg-ct5rhru8ii6s73dl2u70-a.oregon-postgres.render.com',
+        'PORT': '5432'
     }
 }
 
