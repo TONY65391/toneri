@@ -1,22 +1,67 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    
-    <title>Minella's Dinner Of The Main Line</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+</style>
 </head>
 <body>
 
-    <img logo style="position: absolute; width: 10%; height: 10vh;" src="https://8ad64bfd6c8d150c4334.cdn6.editmysite.com/uploads/b/8ad64bfd6c8d150c4334b9936868a44d913970ad12cfc7757462e69649ab1f4b/minellas_new_logo_oval_1636613215.png?width=2400&optimize=medium" alt="">
-    <strong><p style="position: absolute; left: 28vw; top: 3vh;">Minella's Dinner Of The Main Line</p></strong>
-    <strong><p style="position: absolute; left: 48vw; top: 3vh;">Menu</p></strong>
-    <strong><p style="position: absolute; left: 53.5vw; top: 3vh;">About Minella's</p></strong>
-    <strong><p style="position: absolute; left: 65vw; top: 3vh;">Jobs</p></strong>
-    <strong><p style="position: absolute; left: 70vw; top: 3vh;">Contacts</p></strong>
-    <p style="position: absolute; left: 85vw; top: 3vh;">Order Online Now</p>
+<div class="header">
+  <h1>Chania</h1>
+</div>
 
-    <img style="position: relative; top: 20vh; height: 94vh; width: 100%;" src="https://8ad64bfd6c8d150c4334.cdn6.editmysite.com/uploads/b/8ad64bfd6c8d150c4334b9936868a44d913970ad12cfc7757462e69649ab1f4b/2020-06-10_11-45-39_1591803986.jpg?width=1600&optimize=medium&height=480&fit=cover&dpr=1" alt="">
-    <img style="position: absolute; top: 125vh; height: 90vh;  left: 16vw; width: 70vw;" src="https://8ad64bfd6c8d150c4334.cdn6.editmysite.com/uploads/b/8ad64bfd6c8d150c4334b9936868a44d913970ad12cfc7757462e69649ab1f4b/greek-salad_1656085835.jpg?width=2400&optimize=medium" alt="">
-    <img style="position: absolute; top: 200vh; height: 70vh; width: 50vw;" src="https://8ad64bfd6c8d150c4334.cdn6.editmysite.com/uploads/b/8ad64bfd6c8d150c4334b9936868a44d913970ad12cfc7757462e69649ab1f4b/togo_1670537193.jpg?width=2400&optimize=medium" alt="">
+<div class="row">
+
+<div class="col-3">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="col-9">
+  <h1>The City</h1>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</div>
 
 </body>
 </html>
