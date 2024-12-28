@@ -10,3 +10,10 @@ from django.http import Http404,HttpResponse
 def home(request):
     template = loader.get_template('home.html')
     return HttpResponse(template.render(request = request))
+
+def test(request):
+    template = loader.get_template('test.html')
+    return HttpResponse(template.render(request = request))
+
+def anthonio(request):
+    return HttpResponse("Son OF A Bitch")
