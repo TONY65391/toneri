@@ -79,10 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         #'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': 'tony_database',
-        'USER': 'tony_database_user',
-        'PASSWORD': 'DsqRexfloH8gXui9jhuPxQy7DfGrnOkw',
-        'HOST': 'dpg-ct5rhru8ii6s73dl2u70-a.oregon-postgres.render.com',
+        'NAME': 'tony_database_xzxp',
+        'USER': 'tony_database_xzxp_user',
+        'PASSWORD': 'jybx326wBHyT5eyKqE8Q9ez44rOKNIfl',
+        'HOST': 'dpg-ctqmsdrqf0us73ev07ug-a.oregon-postgres.render.com',
         'PORT': '5432'
     }
 }
