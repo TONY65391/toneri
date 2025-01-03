@@ -77,13 +77,13 @@ WSGI_APPLICATION = 'WEBS.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': 'tony_database_xzxp',
-        'USER': 'tony_database_xzxp_user',
-        'PASSWORD': 'jybx326wBHyT5eyKqE8Q9ez44rOKNIfl',
-        'HOST': 'dpg-ctqmsdrqf0us73ev07ug-a.oregon-postgres.render.com',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': 'tony_database_xzxp',
+        # 'USER': 'tony_database_xzxp_user',
+        # 'PASSWORD': 'jybx326wBHyT5eyKqE8Q9ez44rOKNIfl',
+        # 'HOST': 'dpg-ctqmsdrqf0us73ev07ug-a.oregon-postgres.render.com',
+        # 'PORT': '5432'
     }
 }
 
