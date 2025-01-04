@@ -12,8 +12,11 @@ def home(request):
     return HttpResponse(template.render(request = request))
 
 def test(request):
+    width = 700
+    context = {'width':width}
     template = loader.get_template('test.html')
-    return HttpResponse(template.render(request = request))
+    return HttpResponse(template.render(request = request, context = context))
 
 def anthonio(request):
-    return HttpResponse("Son OF A Bitch")
+    template = loader.get_template('another.html')
+    return HttpResponse(template.render(request = request))
