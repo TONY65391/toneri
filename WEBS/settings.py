@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*j=jp_ph1!t7dbn6n6*z)s^lb(9%iqs4j3@)_1h$cp(2ojd0at'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,14 +78,14 @@ WSGI_APPLICATION = 'WEBS.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'tony_database_xzxp',
-        # 'USER': 'tony_database_xzxp_user',
-        # 'PASSWORD': 'jybx326wBHyT5eyKqE8Q9ez44rOKNIfl',
-        # 'HOST': 'dpg-ctqmsdrqf0us73ev07ug-a.oregon-postgres.render.com',
-        # 'PORT': '5432'
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tony_database_xzxp',
+        'USER': 'tony_database_xzxp_user',
+        'PASSWORD': 'jybx326wBHyT5eyKqE8Q9ez44rOKNIfl',
+        'HOST': 'dpg-ctqmsdrqf0us73ev07ug-a.oregon-postgres.render.com',
+        'PORT': '5432'
     }
 }
 
