@@ -2,83 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naruto Pictures</title>
+    <title>Vertical Limit Academy</title>
 </head>
     <style>
-        
-        div.gallery {display: inline; border: 2px solid lightgrey; float: left; margin-left: 10px;}
-
-        div.nav {width: 33%; background-color: burlywood; margin: 0; border: 3px solid black; float: left;}
-
-        div.gallery:first-child {margin-left: 0;}
-
-        div.gallery:hover {border: 2px solid darkgrey;}
-
-        div.gallery img {height: 200px; width: 237.4px;}
-
-        div.desc {padding: 5%; font-size: bolder;}
-
-        div.container {position: absolute; margin-top: 5%; width: 100%;}
-
-        h1 {text-transform: capitalize; background: black; color: white; text-align: center; border: 2px solid black; width: 25%; margin-left: 38%; margin-top: 30px; outline: 8px solid blue;
-            outline-offset: 6px; box-shadow:4.5px 4.5px 0px 0px rgba(0, 0, 0, 0.6); text-shadow: 3px 3px 4px green;}
-        p {text-shadow: 3px 3px 5px green; background-color: black; color: white; box-shadow: 8px 4px 0px 0px rgba(0, 0, 0, 0.4);
-            letter-spacing: 3px; word-spacing: 5px; text-indent: 50px; width: 30%; border: 3px solid black; padding: 15px; 
-            margin-left: 30%; margin-right: 10px; outline: 10px solid blue; outline-offset: 5px; float: right;}
-        ul {text-decoration: none; margin: 0;}
-        li {letter-spacing: 3px; line-height: 2.5; display: inline; border: 3px solid black; padding: 5px; outline: 3px solid burlywood; outline-offset: 2px;}
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {background: url("https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=600");}
+        .header {width: 400px; margin-bottom: 50px; background-color: burlywood; margin-top: 50px; color: white; margin-left: 16%; text-shadow: 1px 1px 3px black; letter-spacing: 2px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        form {margin-left: 5px; width: 270px; color: white; background-color: green; box-shadow: 3px 3px 5px white;}
+        h3, p{margin-left: 5px; margin-bottom: 15px; text-transform: capitalize; color: white;}
     </style>
 <body>
-
+    <div class="header"><h1>Vertical Limit Academy</h1></div>
+    <h3>Welcome our dear parents to Vertical Limit Academy</h3>
+    <p>Motto: Knowledge for empowerment</p>
     <div>
-        <div>
-            <h1>hello world everyone around here for the first time!!</h1>
-            <p>Whenver my father was around he would let us all know that
-                he was the boss of himself and his very own surroundings. </p>
-            <h3 style="background-color: burlywood; width: 20%; text-indent: 50px;">This one should float to the right hand side of the page itself</h3>
-        </div>
-        <div class="nav">
-            <ul>
-                <li>Garri</li>
-                <li>Beans</li>
-                <li>Rice</li>
-                <li>Fresh Tomatoes</li>
-                <li>Onions</li>
-            </ul>
-        </div>
-
+        <form action="">
+            <h3>First Name: <input type="text" name="fn"></h3>
+            <h3>Last Name: <input type="text" name="ln"></h3>
+            <h3>Age: <input type="text" name="age"></h3>
+            <input type="submit" value="Create Account">
+        </form>
     </div>
-    <div class="container">
-        <div class="gallery">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfsz5pkQF_BYfGhv4IZmwJDfRUYgIu8WTkIQ&s" alt="">
-            <div class="desc">Add a description of the image here</div>
-        </div>
-
-        <div class="gallery">
-            <img src="https://i.pinimg.com/736x/7f/9b/b3/7f9bb3043943fcc71d26f90e8db74350.jpg" alt="">
-            <div class="desc">Add a description of the image here</div>
-        </div>
-
-        <div class="gallery">
-            <img src="https://i.pinimg.com/736x/30/6d/a7/306da78d81755fd3fd42ff2b9a28cc64.jpg" alt="">
-            <div class="desc">Add a description of the image here</div>
-        </div>
-
-        <div class="gallery">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTatLTCkGsdm-34TuXTseZ8KPjytKFy5EQ76RfuYWUgwh-v_mlpDbPeKx0&s" alt="">
-            <div class="desc">Add a description of the image here</div>
-        </div>
-
-        <div class="gallery">
-            <img src="https://i.pinimg.com/originals/5f/c2/6d/5fc26d349f70ac3e9b88d3eee5d77987.jpg" alt="">
-            <div class="desc">Add a description of the image here</div>
-        </div>
-
-        <div class="gallery">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-f_6srzYU4GDFshFcgVkVtdw2LI_8_GPu4ICbkOga1IV_G5Kfa5Ief4&s" alt="">
-            <div class="desc">Add a description of the image here</div>
-        </div>
-    </div>
-    
 </body>
 </html>
